@@ -336,3 +336,227 @@ a {
     padding: 55px 20px;
     font-size: 1.05rem;
 }
+.conteneur-page-detail { padding: 0; }
+
+/* ---------- Fil d'Ariane ---------- */
+.bandeau-ariane { background-color: #F3F7EE; }
+.entete-ariane {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2% 10%;
+    font-size: 130%;
+    font-weight: 600;
+    color: #12261A;
+}
+.chemin-navigation a {
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s ease, color 0.25s ease;
+}
+.chemin-navigation a:hover {
+    color: #17512C;
+    border-bottom-color: #8CC63E;
+}
+.compteur-etape { font-weight: 700; }
+
+/* ---------- Bannière ---------- */
+.banniere-detail {
+    position: relative;
+    display: flex;
+    align-items: center;
+    aspect-ratio: 4.4 / 1;
+    min-height: 220px;
+    overflow: hidden;
+}
+.image-fond-detail {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banniere-detail::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.15) 100%);
+}
+.contenu-banniere-detail {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 0 10%;
+    color: #ffffff;
+}
+.contenu-banniere-detail h1 {
+    font-size: 280%;
+    font-weight: 700;
+    margin: 0 0 1%;
+}
+.contenu-banniere-detail p { font-size: 105%; margin: 0; }
+
+/* ---------- Sections (bandes pleine largeur) ---------- */
+.section-simple,
+.section-detail {
+    padding: 3% 10%;
+    margin: 0;
+    background-color: #ffffff;
+}
+.section-detail:nth-of-type(even) { background-color: #F3F7EE; }
+
+.section-simple h2 {
+    font-size: 90%;
+    font-weight: 700;
+    margin: 0 0 1%;
+}
+.section-simple h3 {
+    font-size: 150%;
+    font-weight: 700;
+    margin: 0 0 1.5%;
+}
+.section-detail h2 {
+    font-size: 140%;
+    font-weight: 700;
+    color: #12261A;
+    margin: 0 0 2%;
+}
+.colonne-texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.texte-explicatif {
+    font-size: 100%;
+    line-height: 1.6;
+    color: #333333;
+    margin: 0;
+}
+.contre-exemple {
+    font-size: 90%;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #F3F7EE;
+    border-left: 4px solid #8CC63E;
+    border-radius: 8px;
+    padding: 4%;
+    margin: 4% 0 0;
+}
+.texte-marge { margin-top: 2%; }
+
+/* ---------- Le problème résolu : texte + badges ---------- */
+.grille-probleme {
+    display: grid;
+    grid-template-columns: 65% 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+.liste-badges-droite { display: flex; flex-direction: column; }
+.badge-vert-plein {
+    background-color: #8CC63E;
+    color: #12261A;
+    font-weight: 700;
+    text-align: center;
+    padding: 5% 0;
+    border-radius: 50px;
+}
+.badge-vert-plein + .badge-vert-plein { margin-top: 8%; }
+.carte-illustration {
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #B9D3B8;
+}
+.image-illustration {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.legende-image {
+    text-align: center;
+    font-size: 90%;
+    color: #555555;
+    margin: 1% 0 0;
+}
+.grille-reproduction {
+    display: grid;
+    grid-template-columns: 62% 33%;
+    justify-content: space-between;
+    align-items: center;
+}
+.carte-illustration-reproduction .image-illustration {
+    height: auto;
+    object-fit: contain;
+}
+.legende-marge { width: 62%; margin-top: 1%; } /* centrée sous le schéma */
+.grille-terrain {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+}
+.grille-terrain .carte-illustration { aspect-ratio: 2 / 1; }
+.carte-infos-terrain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 3% 5%;
+}
+.carte-infos-terrain p { margin: 0; }
+.carte-fictive-bleue {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 5.5 / 1;
+    margin-top: 3%;
+    background-color: #D0EEF5;
+    border-radius: 12px;
+    font-size: 120%;
+    font-weight: 700;
+}
+.liens-navigation-bas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 4%;
+    margin-bottom: 2%;
+}
+.bouton-bas {
+    background-color: #8CC63E;
+    color: #12261A;
+    font-weight: 600;
+    padding: 6px 24px;
+    border-radius: 50px;
+    transition: background-color 0.25s ease;
+}
+.bouton-bas:hover { background-color: #ffffff; }
+@media (max-width: 768px) {
+    .entete-ariane { padding: 3% 5%; }
+    .banniere-detail { aspect-ratio: 2 / 1; }
+    .contenu-banniere-detail { padding: 0 5%; }
+    .contenu-banniere-detail h1 { font-size: 200%; }
+
+    .section-simple,
+    .section-detail { padding: 6% 5%; }
+
+    .grille-probleme,
+    .grille-reproduction,
+    .grille-terrain { grid-template-columns: 100%; }
+
+    .grille-probleme .liste-badges-droite {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 3%;
+        margin-top: 4%;
+    }
+    .badge-vert-plein,
+    .badge-vert-plein + .badge-vert-plein { padding: 2% 6%; margin-top: 0; }
+
+    .grille-reproduction > :last-child,
+    .grille-terrain > :last-child { margin-top: 4%; }
+
+    .carte-illustration { aspect-ratio: 3 / 1; }
+    .grille-terrain .carte-illustration { aspect-ratio: 2 / 1; }
+    .legende-marge { width: 100%; }
+    .carte-fictive-bleue { aspect-ratio: 3 / 1; }
+}
