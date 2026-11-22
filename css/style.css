@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+body {
+    font-family: "Akshar", sans-serif;
+    color: #12261A;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.entete {
+    display: flex;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: auto;
+    height: 46px;
+    object-fit: contain;
+}
+.navigation {
+    display: flex;
+}
+.nav_barre a {
+    padding: 8px 18px;
+    border-radius: 50px;
+    transition: background-color 0.25s ease, color 0.25s ease; 
+}
+.nav_barre {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav_barre a:hover {
+    background-color: #eef5e6;
+    border-radius: 50px;
+}
+.nav_barre a[aria-current] {
+    background-color: #8CC63E;
+    border-radius: 50px;
+}
