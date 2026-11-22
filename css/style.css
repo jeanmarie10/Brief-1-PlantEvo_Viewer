@@ -329,3 +329,10 @@ a {
     justify-content: center;
     font-weight: 700;
 }
+.pied-page {
+    background-color: #17512C;
+    color: #ffffff;
+    text-align: center;
+    padding: 55px 20px;
+    font-size: 1.05rem;
+}
