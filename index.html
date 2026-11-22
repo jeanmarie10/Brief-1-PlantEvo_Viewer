@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantEvo-Viewer</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="entete">
+        <div class="logo">
+            <img src="./image/accueil/Logo éco-agritech PlantEvo transparent.png" alt="PlantEvo">
+        </div>
+        <nav class="navigation">
+            <ul class="nav_barre">
+                <li><a href="#acceuil" aria-current="Navigation principale">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#a_propos">À propos</a></li>
+                <li><a href="#sources">Source</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-banniere">
+            <div class="banniere-image">
+                <img src="./image/accueil/accueil-p.jpg" alt="Mains tenant des plantes" class="image-fond">
+                <div class="conteneur-banniere">
+                    <span class="etiquette-contour">De l'eau à la terre</span>
+                    <h1>PlantEvo Viewer</h1>
+                    <p>Il y a environ 470 millions d'années, les premières plantes ont quitté l'eau. Pour vivre sur terre, elles ont dû résoudre quatre problèmes. Suis leur histoire, des algues aux plantes à fleurs.</p>
+                    <a href="#menu" class="bouton-voyage">Commencer le voyage</a>
+                </div>
+            </div>
+            <div class="grille-statistiques">
+                <div class="carte-stat">
+                    <span class="chiffre-stat">6</span>
+                    <span class="texte-stat">groupes de végétaux</span>
+                </div>
+                <div class="carte-stat">
+                    <span class="chiffre-stat">4</span>
+                    <span class="texte-stat">problèmes à résoudre</span>
+                </div>
+                <div class="carte-stat">
+                    <span class="chiffre-stat">~470 Ma</span>
+                    <span class="texte-stat">environ, depuis les premières mousses</span>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="section-menu">
+            <span class="pastille-titre">Menu</span>
+            <h2>De l'eau à la terre</h2>
+            <p class="sous-titre">Choisis une étape de l'évolution des végétaux.</p>
+            <div class="grille-etapes">
+                <a href="./pages/algues.html" class="carte-etape">
+                    <img src="./image/algues/algues.jpg" alt="Algues" class="image-etape">
+                    <span class="numero-etape">1</span>
+                    <h3>Algues</h3>
+                    <p class="description-etape">Thalle, vie aquatique</p>
+                    <span class="badge-age">plus de 1 milliard d'années</span>
+                </a>
+                <a href="./pages/mousses.html" class="carte-etape">
+                    <img src="./image/mousses/Mousses.jpg" alt="Mousses" class="image-etape">
+                    <span class="numero-etape">2</span>
+                    <h3>Mousses</h3>
+                    <p class="description-etape">Cuticule, stomates, rhizoïde</p>
+                    <span class="badge-age">environ 470 Ma</span>
+                </a>
+                <a href="./pages/fourgeres.html" class="carte-etape">
+                    <img src="./image/fougeres/Fourgeres(1) - Copie.jpg" alt="Fougères" class="image-etape">
+                    <span class="numero-etape">3</span>
+                    <h3>Fougères</h3>
+                    <p class="description-etape">Vaisseaux, lignine, racines</p>
+                    <span class="badge-age">environ 430 Ma</span>
+                </a>
+                <a href="./pages/coniferes.html" class="carte-etape">
+                    <img src="./image/coniferes/Coniferes.jpg" alt="Conifères" class="image-etape">
+                    <span class="numero-etape">4</span>
+                    <h3>Conifères</h3>
+                    <p class="description-etape">Pollen, graine nue</p>
+                    <span class="badge-age">graines: environ 370 Ma</span>
+                </a>
+                <a href="./pages/graminees.html" class="carte-etape">
+                    <img src="./image/graminees/Graminees.jpg" alt="Graminées" class="image-etape">
+                    <span class="numero-etape">5</span>
+                    <h3>Graminées</h3>
+                    <p class="description-etape">Fleur, fruit, pollinisation par le vent</p>
+                    <span class="badge-age">environ 130 Ma</span>
+                </a>
+                <a href="./pages/dicotyledones.html" class="carte-etape">
+                    <img src="./image/dicotyledones/dicotyledones.jpg" alt="Dicotylédones" class="image-etape">
+                    <span class="numero-etape">6</span>
+                    <h3>Dicotylédones</h3>
+                    <p class="description-etape">Fleur, fruit, pollinisation par les insectes</p>
+                    <span class="badge-age">environ 130 Ma</span>
+                </a>
+            </div>
+            <div class="zone-fleche">
+                <div class="ligne-fleche"></div>
+                <p>de plus en plus indépendantes de l'eau</p>
+            </div>
+        </section>
+        <section id="a_propos" class="section-apropos">
+            <span class="pastille-titre">À propos</span>
+            <h2>Pourquoi ce projet ?</h2>
+            <div class="grille-pourquoi">
+                <article class="carte-pourquoi">
+                    <div class="entete-pourquoi">
+                        <span class="point-vert"></span>
+                        <h3>Comprendre</h3>
+                    </div>
+                    <p>Comprendre comment les plantes ont conquis tous les milieux.</p>
+                </article>
+                <article class="carte-pourquoi">
+                    <div class="entete-pourquoi">
+                        <span class="point-vert"></span>
+                        <h3>Observer</h3>
+                    </div>
+                    <p>Observer des plantes autour de toi, de l'algue à la plante à fleurs.</p>
+                </article>
+                <article class="carte-pourquoi">
+                    <div class="entete-pourquoi">
+                        <span class="point-vert"></span>
+                        <h3>Relier à l'agriculture</h3>
+                    </div>
+                    <p>Faire le lien entre l'évolution des fleurs et les cultures, comme le cacaoyer ou le riz.</p>
+                </article>
+            </div>
+            <h2>Comment ça marche ?</h2>
+            <div class="liste-marche">
+                <div class="etape-marche">
+                    <span class="numero-sombre">1</span>
+                    <span>Choisis une étape</span>
+                </div>
+                <div class="etape-marche">
+                    <span class="numero-sombre">2</span>
+                    <span>Découvre</span>
+                </div>
+                <div class="etape-marche">
+                    <span class="numero-sombre">3</span>
+                    <span>Passe à la suite</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="sources" class="pied-page">
+        <span>Sources</span> - 
+        <span>Auteur</span> - 
+        <span>Digital Farming School</span>
+    </footer>
+</body>
+</html>
