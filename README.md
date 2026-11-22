@@ -56,5 +56,5 @@ Ouvrir `index.html` dans un navigateur (double-clic), ou avec l'extension Live S
 Une connexion internet est nécessaire pour afficher la police.
 
 ## Auteur
-
+Lien figma: https://www.figma.com/design/26NFQoCJAj7fGwrrmLPISW/PlantEvo-Viewer---Maquette?node-id=0-1&t=kvvX9uIVF0YnPvhJ-1
 Dadié Ebey Jean-marie Michel, Agritech, 22/11/2026.

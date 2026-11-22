@@ -555,6 +555,18 @@ a {
     margin: 1% 0 0;
 }
 
+/* Observé sur le terrain : image de la carte */
+.carte-fictive-bleue span {
+    display: block;
+    width: 100%;
+}
+.carte-fictive-bleue img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 /* Reproduction : schéma + texte */
 .grille-reproduction {
     display: grid;
